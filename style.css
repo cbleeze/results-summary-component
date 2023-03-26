@@ -1,0 +1,279 @@
+:root{
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    --Light-slate-blue-backgroun: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+
+
+    --ff: 'Hanken Grotesk', sans-serif;
+}
+
+
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    6. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: var(--ff);
+    font-weight: 500;
+    background-color:#F8F8FF;
+   
+  }
+
+
+
+article{
+ display: flex;
+background-color: var(--White);
+border-radius: 20px;
+overflow: hidden;
+box-shadow: 1px 1px 5px rgb(233, 240, 240);
+overflow: hidden;
+}
+
+
+
+  .section-1{
+    background: linear-gradient(
+      198deg,
+      hsl(252, 100%, 67%), 
+    hsl(241, 81%, 54%));
+    color: var(--White);
+   text-align: center;
+   width: 250px;
+   border-radius: 20px;
+   overflow: hidden;
+   
+  }
+
+  .circle{
+    background: linear-gradient(
+      hsla(256, 72%, 46%, 1),
+      hsla(241, 72%, 46%, 0)
+    );
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin-left:  4em;
+    margin-bottom: 1rem;
+   
+    
+  }
+
+
+.main-title{
+  font-size: 15px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 1.5rem;
+}
+
+h1{
+  font-size: 45px;
+  padding-top: 2rem;
+  font-weight: 800;
+}
+
+.of{
+  position: relative;
+  bottom: 10%;
+  padding-bottom: 2rem;
+  font-size: 10px;
+  color: var(--Light-lavender);
+}
+
+
+h2{
+font-weight: 500;
+}
+
+.subtitle{
+padding-left: 3em;
+padding-right: 3em;
+padding-top: 0.66rem;
+padding-bottom: 2rem;
+  font-size: 12px;
+  color: var(--Light-lavender);
+}
+
+
+.section-2{
+  width: 230px;
+  overflow: hidden;
+  
+}
+
+h3{
+  font-size: 15px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    font-weight: 700;
+}
+
+.flex1{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color:rgba(255,160,122,0.1);
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 0.55em;
+  margin-bottom: 0.75rem;
+  color: var(--Light-red);
+  border-radius: 5px;
+
+}
+
+h4{
+  position: absolute;
+  left: 17%;
+  font-size: 15px;
+
+}
+
+p{
+  font-size: 15px;
+  color: var(--Dark-gray-blue);
+  font-weight: 800;
+}
+
+span{
+  color: var(--Light-lavender);
+  font-weight: 500;
+}
+
+.flex2{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color:rgba(255, 176, 31,0.1);
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 0.55em;
+  margin-bottom: 0.75rem;
+  color: var(--Orangey-yellow);
+  border-radius: 5px;
+}
+
+.flex3{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color:rgba(0, 189, 145,0.1);
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 0.55em;
+  margin-bottom: 0.75rem;
+  color: var(--Green-teal);
+  border-radius: 5px;
+}
+
+.flex4{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color:rgba(17, 37, 212,0.1);
+  margin-left: 1em;
+  margin-right: 1em;
+  padding: 0.55em;
+  margin-bottom: 0.75rem;
+  color: var(--Cobalt-blue);
+  border-radius: 5px;
+}
+
+button{
+  cursor: pointer;
+  text-decoration: none;
+  /*inline flex because the cart is inside the box and needs to be centered*/
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+
+  border: 0;
+  border-radius: 1rem;
+  padding: 0.9em 6em;
+  background-color: var(--Dark-gray-blue);
+  color: white;
+  font-size: 0.725rem;
+  font-weight: 500;
+  margin: 30px 0;
+  margin-left: 2em;
+}
+
+ button:is(:hover, :focus){
+  background-color: var(--Cobalt-blue);
+  transition: background-color .3s ease;
+  }
+
+  @media only screen and (max-width:815px){
+    article{
+      flex-direction: column;
+    }
+  }
+
+
+
+
+
